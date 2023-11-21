@@ -13,12 +13,12 @@ from .lib.WordsSearch import WordsSearch
 
 
 @plugins.register(
-    name="Banwords",
+    name="Rebanwords",
     desire_priority=100,
     hidden=True,
     desc="判断消息中是否有敏感词、决定是否回复。",
     version="1.0",
-    author="lanvent",
+    author="vicxxc",
 )
 class Banwords(Plugin):
     def __init__(self):
