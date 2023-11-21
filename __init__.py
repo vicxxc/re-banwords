@@ -1,0 +1,1 @@
+from .rebanwords import *
