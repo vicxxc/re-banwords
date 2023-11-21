@@ -67,7 +67,7 @@ class Banwords(Plugin):
             f = self.searchr.FindFirst(content)
             if f:
                 logger.info("[ReBanwords] %s in message" % f["Keyword"])
-                e_context.action = EventAction.BREAK_PASS
+                e_context.action = EventAction.CONTINUE
                 return
         elif self.action == "replace":
             if self.searchr.ContainsAny(content):
